@@ -1,0 +1,181 @@
+:root{
+   --main-color:#0d6efd
+
+}
+body{
+   background-color: #F5F5F5; ;
+}
+.h-350{
+   height: 21.875rem;
+}
+nav .navbar-nav  a{
+   color:white;
+   transition: all 0.3s ease-in-out;
+   position: relative;
+ 
+   
+}
+nav .nav-link:hover, nav .navbar a:focus{
+  color: var(--main-color);
+  transition: width 0.3s ease-in-out;
+}
+
+
+
+body:not(body:has(:target)) li a[href="#hero"],
+body:has(#hero:target) li a[href="#hero"],
+body:has(#about:target) li a[href="#about"],
+body:has(#services:target) li a[href="#services"],
+body:has(#work:target) li a[href="#work"],
+body:has(#blog:target) li a[href="#blog"],
+body:has(#contact:target) li a[href="#contact"]{
+ color:var(--main-color)}
+ 
+
+   
+  
+  .dropdown > .dropdown-menu { 
+     border-radius: 0;
+     display: none;
+     
+  }
+  .dropdown > .dropdown-menu li, .dropend> .dropdown-menu li { 
+     padding: 0.5rem 0;
+     
+  }
+  .dropdown:hover > .dropdown-menu {
+     display: block;
+     margin-top: 0.125rem;
+     
+  } 
+
+
+   
+  
+  @media screen and (min-width:992px){
+     .dropdown{
+        overflow-y:visible;
+     }
+     .dropdown:hover > .dropdown-menu {
+     display: block;
+     margin-top: 0.125rem;
+     
+  } 
+     .dropend > .dropdown-menu li{
+        position: relative;
+     }
+     .dropend > .dropdown-menu{
+        display: none;
+        position: absolute;
+        top:0;
+        
+     } 
+     .dropend:hover > .dropdown-menu{
+        display: block;
+        right:100%; 
+        left:auto;
+     }
+     
+     nav .navbar-nav  a ,nav .navbar a:focus{
+        color: white;
+        transition: all 0.3s ease-in-out;
+        position: relative;
+      
+        
+    }
+    nav .nav-link:hover{
+       color: white;
+       transition: width 0.3s ease-in-out;
+    }
+    
+    
+    
+    nav .nav-link::before{
+        content: "";
+        position: absolute;
+        left:10%;
+        bottom: 0;
+        width: 0%;
+        height: 0.12rem;
+        background-color:rgb(255, 255, 255) ;
+        transition: 0.5s ease;
+      }
+    nav .nav-link:hover::before{
+        width: 80%;
+      }
+     nav .nav-link:target{
+        transform: translateX(0);
+        
+      }
+      body:not(body:has(:target)) li a[href="#hero"],
+      body:has(#hero:target) li a[href="#hero"],
+      body:has(#about:target) li a[href="#about"],
+      body:has(#services:target) li a[href="#services"],
+      body:has(#work:target) li a[href="#work"],
+      body:has(#blog:target) li a[href="#blog"],
+      body:has(#contact:target) li a[href="#contact"]{
+        color:white}
+      
+      body:not(body:has(:target)) li a[href="#hero"]::before,
+      body:has(#hero:target) li a[href="#hero"]::before,
+      body:has(#about:target) li a[href="#about"]::before,
+      body:has(#services:target) li a[href="#services"]::before,
+      body:has(#work:target) li a[href="#work"]::before,
+      body:has(#blog:target) li a[href="#blog"]::before,
+      body:has(#contact:target) li a[href="#contact"]::before {
+        width: 80%;}
+      
+     
+  }
+
+ 
+
+ 
+ 
+  
+  nav .dropdown .dropdown-menu a{
+     color: #1e1e1e;
+  }
+  nav .dropdown .dropdown-menu a:hover{
+     color: var(--main-color);
+  } 
+   #portfolio{
+      background-image: url(../images/overlay-bg.jpg);
+      background-position: center center;
+      background-size: cover;
+      background-attachment: fixed;
+      
+  }
+  a{
+   text-decoration: none;
+  }
+   .url a{
+      transition: all 0.5s ease-in;
+      
+   }
+  .url a:hover{
+   color: var(--main-color) !important;
+   
+  }
+
+  #portfolio-details .carousel-indicators [data-bs-target]{
+   width: 0.8rem;
+   height: 0.8rem;
+   border-radius: 50%;
+   background-color: #0078ff;
+  
+
+  }
+
+  body:not(body:has(:target)) li a[href="#hero"],
+  body:has(#hero:target) li a[href="#hero"],
+  body:has(#about:target) li a[href="#about"],
+  body:has(#services:target) li a[href="#services"],
+  body:has(#work:target) li a[href="#work"],
+  body:has(#blog:target) li a[href="#blog"],
+  body:has(#contact:target) li a[href="#contact"]{
+    color:white}
+
+
+   
+  

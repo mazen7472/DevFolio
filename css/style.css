@@ -1,0 +1,560 @@
+:root{
+   --main-color:#0d6efd
+
+}
+body{
+   background-color: #F5F5F5; ;
+}
+ul{
+   list-style: none;
+}
+ .w-85{
+   width: 85%;
+ }
+ .w-90{
+   width: 90%;
+ }
+ .w-35{
+   width: 35%;
+ }
+
+ 
+ nav .navbar-nav  a{
+    color:white;
+    transition: all 0.3s ease-in-out;
+    position: relative;
+  
+    
+}
+nav .nav-link:hover, nav .navbar a:focus{
+   color: var(--main-color);
+   transition: width 0.3s ease-in-out;
+}
+
+body:not(body:has(:target)) li a[href="#hero"],
+body:has(#hero:target) li a[href="#hero"],
+body:has(#about:target) li a[href="#about"],
+body:has(#services:target) li a[href="#services"],
+body:has(#work:target) li a[href="#work"],
+body:has(#blog:target) li a[href="#blog"],
+body:has(#contact:target) li a[href="#contact"]{
+  color:var(--main-color)}
+  
+
+    
+   
+   .dropdown > .dropdown-menu { 
+      border-radius: 0;
+      display: none;
+      
+     
+      
+   }
+   .dropdown > .dropdown-menu li, .dropend> .dropdown-menu li { 
+      padding: 0.5rem 0;
+      
+   }
+   .dropdown:hover > .dropdown-menu {
+      display: block;
+      margin-top: 0.125rem;
+      
+   } 
+
+  
+ 
+
+
+   
+   @media screen and (min-width:992px){
+     
+      .dropdown:hover > .dropdown-menu {
+      display: block;
+      margin-top: 0.125rem;
+      
+   } 
+      .dropend > .dropdown-menu li{
+         position: relative;
+      }
+      .dropend > .dropdown-menu{
+         display: none;
+         position: absolute;
+         top:0;
+         
+      } 
+      .dropend:hover > .dropdown-menu{
+         display: block;
+         right:100%; 
+         left:auto;
+      }
+      
+      nav .navbar-nav  a ,nav .navbar a:focus{
+         color: white;
+         transition: all 0.3s ease-in-out;
+         position: relative;
+       
+         
+     }
+     nav .nav-link:hover{
+        color: white;
+        transition: width 0.3s ease-in-out;
+     }
+     
+     
+     
+     nav .nav-link::before{
+         content: "";
+         position: absolute;
+         left:10%;
+         bottom: 0;
+         width: 0%;
+         height: 0.12rem;
+         background-color:rgb(255, 255, 255) ;
+         transition: 0.5s ease;
+       }
+     nav .nav-link:hover::before{
+         width: 80%;
+       }
+      nav .nav-link:target{
+         transform: translateX(0);
+         
+       }
+       body:not(body:has(:target)) li a[href="#hero"],
+       body:has(#hero:target) li a[href="#hero"],
+       body:has(#about:target) li a[href="#about"],
+       body:has(#services:target) li a[href="#services"],
+       body:has(#work:target) li a[href="#work"],
+       body:has(#blog:target) li a[href="#blog"],
+       body:has(#contact:target) li a[href="#contact"]{
+         color:white}
+       
+       body:not(body:has(:target)) li a[href="#hero"]::before,
+       body:has(#hero:target) li a[href="#hero"]::before,
+       body:has(#about:target) li a[href="#about"]::before,
+       body:has(#services:target) li a[href="#services"]::before,
+       body:has(#work:target) li a[href="#work"]::before,
+       body:has(#blog:target) li a[href="#blog"]::before,
+       body:has(#contact:target) li a[href="#contact"]::before {
+         width: 80%;}
+       
+      
+   }
+
+  
+
+  
+  
+   
+   nav .dropdown .dropdown-menu a{
+      color: #1e1e1e;
+   }
+   nav .dropdown .dropdown-menu a:hover{
+      color: var(--main-color);
+   } 
+   
+
+
+#hero{
+    background-image: url(../images/hero-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.anime::after{
+    content: " |";
+    animation: typing 15s infinite;
+}
+
+@keyframes typing {
+     1%{
+        content: "|";
+      }
+     2%{
+       content: "D|";
+     }
+     3%{
+        content: "De|";
+     }
+     4%{
+        content: "Des|";
+     }
+     5%{
+        content: "Desi|";
+     }
+     6%{
+        content: "Desig|";
+     }
+     7%{
+        content: "Design|";
+     }
+     8%{
+        content: "Designe|";
+     }
+     9%{
+        content: "Designer|";
+     }
+
+     15%{
+        content: "Designer|";
+     }
+    
+
+     16%{
+        content: "Designe|";
+     }
+     17%{
+        content: "Design|";
+     }
+     18%{
+        content: "Desig|";
+     }
+     19%{
+        content: "Desi|";
+     }
+     20%{
+        content: "Des|";
+     }
+     21%{
+        content: "De|";
+     }
+     22%{
+        content: "Dev|";
+     }
+     23%{
+        content: "Deve|";
+     }
+     24%{
+        content: "Devel|";
+     }
+     25%{
+        content: "Develo|";
+     }
+     26%{
+        content: "Develop|";
+     }
+     27%{
+        content: "Develope|";
+     }
+     28%{
+        content: "Developer|";
+     }
+     36%{
+        content: "Developer|";
+     }
+     37%{
+        content: "Develope|";
+     }
+     38%{
+        content: "Develop|";
+     }
+     39%{
+        content: "Develo|";
+     }
+     40%{
+        content: "Devel|";
+     }
+     41%{
+        content: "Deve|";
+     }
+     42%{
+        content: "Dev|";
+     }
+     43%{
+        content: "De|";
+     }
+     44%{
+        content: "D|";
+     }
+     45%{
+        content: "F|";
+     }
+     46%{
+        content: "Fr|";
+     }
+     47%{
+        content: "Fre|";
+     }
+     48%{
+        content: "Free|";
+     }
+     49%{
+        content: "Freel|";
+     }
+     
+     50%{
+        content: "Freela|";
+     }
+     
+     51%{
+        content: "Freelan|";
+     }
+     
+     52%{
+        content: "Freelanc|";
+     }
+     53%{
+        content: "Freelance|";
+     }
+     54%{
+        content: "Freelancer|";
+     }
+     61%{
+        content: "Freelancer|";
+     }
+
+     62%{
+        content: "Freelance|";
+     }
+     63%{
+        content: "Freelanc|";
+     }
+     64%{
+        content: "Freelan|";
+     }
+     65%{
+        content: "Freela|";
+     }
+     66%{
+        content: "Freel|";
+     }
+     67%{
+        content: "Free|";
+     }
+     68%{
+        content: "Fre|";
+     }
+     69%{
+        content: "Fr|";
+     }
+     70%{
+        content: "F|";
+     }
+     71%{
+        content: "|";
+     }
+     72%{
+        content: "P|";
+     }
+     73%{
+        content: "Ph|";
+     }
+     74%{
+        content: "Pho|";
+     }
+     75%{
+        content: "Phot|";
+     }
+     76%{
+        content: "Photo|";
+     }
+     77%{
+        content: "Photog|";
+     }
+     78%{
+        content: "Photogr|";
+     }
+     79%{
+        content: "Photogra|";
+     }
+     80%{
+        content: "Photograp|";
+     }
+     81%{
+        content: "Photograph|";
+     }
+     82%{
+        content: "Photographe|";
+     }
+     83%{
+        content: "Photographer|";
+     }
+     88%{
+        content: "Photographer|";
+     }
+     89%{
+        content: "Photographe|";
+     }
+     90%{
+        content: "Photograph|";
+     }
+     91%{
+        content: "Photograp|";
+     }
+     92%{
+        content: "Photogra|";
+     }
+     93%{
+        content: "Photogr|";
+     }
+     94%{
+        content: "Photog|";
+     }
+     95%{
+        content: "Photo|";
+     }
+     96%{
+        content: "Phot|";
+     }
+     97%{
+        content: "Pho";
+     }
+     98%{
+        content: "Ph|";
+     }
+     99%{
+        content: "P|";
+     }
+     100%{
+        content: "|";
+     }
+
+ 
+ }
+
+
+ .progress, .progress-stacked {
+   background-color: #CDE1F8;
+   border-radius: 0;
+   height: 0.75rem;
+ }
+ .title{
+   position: relative;
+ }
+ .title::after{
+   content:"";
+   width: 20%;
+   height: 0.2rem;
+   position: absolute;
+   bottom: -25%;
+   left:0;
+   background-color: var(--main-color);
+ }
+ .sec-title{
+   position: relative;
+ }
+ 
+ .sec-title::after{
+   content:"";
+   width: 5%;
+   height: 0.2rem;
+   position: absolute;
+   bottom: -15%;
+   left:50%;
+   transform: translate(-50%,-50%);
+   background-color: var(--main-color);
+ }
+
+ .service:hover .icon-circle {
+   color: #fff;
+   background-color: var(--main-color);
+   box-shadow: 0 0 0 0.625rem #cde1f8;
+   transition: all 0.5s;
+}
+.icon-circle{
+   border-radius: 50%;
+   width: 100%;
+   height: 100%;
+   display: inline-flex;
+   justify-content: center;
+   align-items: center;
+}
+ .service-icon{
+  width:7rem;
+  height:7rem;
+  border:0.6rem  solid var(--main-color);
+ }
+ .border-icon{
+   border-width: 90px;
+ }
+
+ #statistics{
+  background-image: url(../images/counters-bg.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+
+ }
+ .statistic-icon{
+   border:0.6rem  solid #cde1f8;
+   width: 6rem;
+   height: 6rem;
+ }
+ .work-box{
+   overflow: hidden;
+ }
+ .work-box img{
+   transition: all 0.3s ease-in;
+   overflow: hidden;
+ }
+ .work-box:hover img{
+   transform:scale(1.2);
+ }
+ #testimonial{
+   background-image: url(../images/overlay-bg.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+ 
+  }
+  #testimonial .carousel-indicators [data-bs-target]{
+   width :0.8rem;
+   height: 0.8rem;
+   border-radius: 50%;
+   
+  }
+  #blog .card-body a{
+   color: #1e1e1e;
+   text-decoration: none;
+   transition: all 0.3s ease;
+  }
+  #blog .card-body a:hover{
+    color: var(--main-color);
+  }
+  .icon-img{
+   width: 2rem;
+   height: 2rem;
+   border-radius: 50%;
+  }
+  .card-footer a{
+   text-decoration: none;
+   transition: all 0.3s ease;
+   color: #1e1e1e;
+  }
+  .card-footer a:hover{
+   text-decoration: none;
+   transition: all 0.3s ease;
+   color: var(--main-color);
+  }
+  #contact{
+   background-image: url(../images/overlay-bg.jpg);
+   background-position: center center;
+   background-size: cover;
+   background-attachment: fixed;
+ 
+  }
+  #contact .sec-title::after{
+   content:"";
+   width: 20%;
+   height: 0.2rem;
+   position: absolute;
+   bottom: -24%;
+   left:10%;
+   transform: translate(-50%,-50%);
+   background-color: var(--main-color);
+ }
+ .icon{
+   width: 3rem;
+   height: 3rem;
+ }
+ .icon{
+   border:0.3rem  solid var(--main-color);
+ }
+ .icon:hover{
+   color: #fff;
+   background-color: var(--main-color);
+   box-shadow: 0 0 0 0.35rem #cde1f8;
+   transition: all 0.5s;
+}
+.bg-blue{
+   background-color: #0062D3;
+}
